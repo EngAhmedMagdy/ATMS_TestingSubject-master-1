@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<div class="container">
+    <hr />
+    <h1>Home</h1>
+    <hr />
+    <br />
+    <p>
+        Hello My name is @Session["AdminName"] <br /> 
+        @Html.ActionLink("To Edit Yor  Account Click Here", "EditMe", "Admin") <br />
+          @Html.ActionLink("To see Your Details Click Here", "DetailsMe", "Admin")
+        <br />
+          @Html.ActionLink("To Change Your Password Click Here", "ChangePassword", "Admin")
+    </p>
+    <hr />
+    <h6>
+        @Html.ActionLink("Logout", "Logout", "Home")
+    </h6>
+    <br />
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <a href="@Url.Action("OnlineUsers","Admin")" class="btn btn-danger btn-block">Online Users</a>
+        </div>
+        
+    </div>
+</div>
