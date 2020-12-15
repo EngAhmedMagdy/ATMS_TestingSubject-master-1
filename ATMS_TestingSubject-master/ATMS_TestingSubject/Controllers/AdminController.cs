@@ -17,6 +17,7 @@ namespace ATMS_TestingSubject.Controllers
         // home dashboard 
         public ActionResult Index()
         {
+            //ahmed magdy was here
             if (Session["AdminId"] == null)
             {
                 return RedirectToAction("Login", "Home");
