@@ -18,6 +18,7 @@ namespace ATMS_TestingSubject.Controllers
         public ActionResult Index()
         {
             //ahmed magdy was here
+            //احمد كان هنا تاني
             if (Session["AdminId"] == null)
             {
                 return RedirectToAction("Login", "Home");
